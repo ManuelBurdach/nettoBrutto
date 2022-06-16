@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+}
+
+main section {
+  max-width: 350px;
+  margin: 10px auto;
+  border: 1px solid rgba(0, 0, 0, 0.462);
+  border-radius: 5px;
+}
+
+main section > p {
+  padding: 10px;
+  font-size: 12px;
+  color: rgba(19, 103, 177, 0.917);
+}
+
+main section p span {
+  color: red;
+}
+
+form {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.462);
+}
+
+.bereich {
+  background-color: rgba(167, 194, 252, 0.216);
+  padding: 10px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.bereich > p:first-child {
+  padding-bottom: 15px;
+}
+
+.bereich input[type="text"] {
+  padding: 5px;
+  width: 70px;
+}
+
+.submit {
+  background-color: rgba(19, 103, 177, 0.917);
+  width: 90%;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  margin: 15px;
+  cursor: pointer;
+}

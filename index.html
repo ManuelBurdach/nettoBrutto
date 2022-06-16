@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- NETTO --------------------------------------- -->
+      <section id="netto">
+        <form>
+          <fieldset class="bereich">
+            <p>Was soll berechnet werden?</p>
+            <div>
+              <input
+                type="radio"
+                id="aufschlag"
+                name="bruttonetto"
+                value="1"
+                onchange="change()"
+                required
+              />
+              <label for="aufschlag"
+                >Mehrwertsteuer aufschlagen (Netto zu Brutto)</label
+              >
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="abziehen"
+                name="bruttonetto"
+                value="2"
+                onchange="change()"
+              />
+              <label for="abziehen"
+                >Mehrwertsteuer abziehen (Brutto zu Netto)</label
+              >
+            </div>
+          </fieldset>
+          <fieldset class="bereich">
+            <p>Mehrwertsteuersatz</p>
+            <input type="radio" id="prozentsatz1" name="steuersatz" required />
+            <label for="prozentsatz1"> 19 ‚%</label>
+            <input type="radio" id="prozentsatz2" name="steuersatz" />
+            <label for="prozentsatz2"> 7 %</label>
+          </fieldset>
+          <fieldset class="bereich">
+            <p id="betragOutput">
+              Nettobetrag (Preis ohne Mehrwertsteuer) in Euro <span>*</span>
+            </p>
+            <input type="text" id="betrag" placeholder="0.00" required />
+          </fieldset>
+          <input type="submit" value="Berechnen" class="submit" />
+        </form>
+        <p>Ergebnis</p>
+        <div class="bereich">
+          <p>Mehrwertsteuerbetrag</p>
+          <p id="mehrwertsteuerbetrag">0.00 €</p>
+        </div>
+        <div class="bereich">
+          <p id="bruttoBetragOutput">Bruttobetrag (Endpreis)</p>
+          <p id="bruttobetrag">0.00 €</p>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
